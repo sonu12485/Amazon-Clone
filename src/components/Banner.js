@@ -16,7 +16,6 @@ function Banner() {
       >
         <div>
           <img
-            loading="lazy"
             src="https://drive.corp.amazon.com/view/saikonch@/Hackathon-2023/LOTW/Screenshot%202023-03-30%20at%209.37.15%20PM.png"
             alt=""
           />
