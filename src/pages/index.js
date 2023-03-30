@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 import Modal from "../components/modal/modal";
+import Footer from "../components/Footer";
 
 export default function Home({ products }) {
   return (
@@ -18,6 +19,7 @@ export default function Home({ products }) {
         {/* Product Feed */}
         <ProductFeed products={products} />
       </main>
+      <Footer />
       <Modal />
     </div>
   );
