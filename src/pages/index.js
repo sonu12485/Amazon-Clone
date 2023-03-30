@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
+import Modal from "../components/modal/modal";
 
 export default function Home({ products }) {
   return (
@@ -17,6 +18,7 @@ export default function Home({ products }) {
         {/* Product Feed */}
         <ProductFeed products={products} />
       </main>
+      <Modal />
     </div>
   );
 }
