@@ -84,6 +84,30 @@ export function getServerSideProps(context) {
             "https://m.media-amazon.com/images/I/81rWxacWq4L._AC_SX679_.jpg",
           rating: { rate: 4.6, count: 120 },
         },
+        {
+          id: 6,
+          title:
+            "Nemesis Now Officially Licensed Lord of The Rings Sauron Tankard, Grey, 15.5cm",
+          price: 55.38,
+          description:
+            "Officially Licensed. Lord of the Rings. Sauron Tankard.Sise 15.5cm.",
+          category: "grocery",
+          image:
+            "https://m.media-amazon.com/images/I/51Wf--6DaOL._AC_UL640_FMwebp_QL65_.jpg",
+          rating: { rate: 5.0, count: 120 },
+        },
+        {
+          id: 7,
+          title:
+            "Nemesis Now Officially Licensed Lord of The Rings Aragorn Tankard, Silver, 15.5cm",
+          price: 59.99,
+          description:
+            "Officially Licensed. Lord of the Rings. Sauron Tankard.Sise 15.5cm.",
+          category: "grocery",
+          image:
+            "https://m.media-amazon.com/images/I/61-W3wto4AL._AC_SX679_.jpg",
+          rating: { rate: 5.0, count: 120 },
+        },
       ],
     },
   };
