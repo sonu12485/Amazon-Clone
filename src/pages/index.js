@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 import Modal from "../components/modal/modal";
-import Footer from "../components/Footer";
 
 export default function Home({ products }) {
   return (
@@ -19,7 +18,6 @@ export default function Home({ products }) {
         {/* Product Feed */}
         <ProductFeed products={products} />
       </main>
-      <Footer />
       <Modal />
     </div>
   );
@@ -34,6 +32,7 @@ export function getServerSideProps(context) {
           title:
             "Monopoly: The Lord of The Rings Edition Board Game Inspired by The Movie Trilogy, Family Games, Ages 8 and Up (Amazon Exclusive)",
           price: 41.99,
+          adjustedPrice: 39.99,
           description:
             "MONOPOLY GAME: THE LORD OF THE RINGS GAME: Protect the lands of Middle-earth from the armies of Mordor with this Monopoly board game inspired by The Lord of the Rings movie trilogy",
           category: "game",
@@ -45,6 +44,7 @@ export function getServerSideProps(context) {
           id: 2,
           title: "Lord of The Rings Battle for Middle Earth Chess Set",
           price: 49.0,
+          adjustedPrice: 45.99,
           description:
             "Command the forces of good, led by Galadriel, Aragorn, Frodo and Gandalf the Grey, or wield the forces of evil, including Gollum, the Nazgûl, Saruman, and the Dark Lord Sauron!",
           category: "men's clothing",
@@ -57,6 +57,7 @@ export function getServerSideProps(context) {
           title:
             "KLQJNP Bookends Book End Lord of Rings Hobbit Book Decoration Resin, Decorative Book Stopper Binder and Dividers, Blue, Large",
           price: 39.99,
+          adjustedPrice: 37.99,
           description:
             "Sturdy construction: strong enough to hold your books neatly and upright, and not easily bent. Perfect for storing large books, house DVDs, video games or CDs.",
           category: "men's clothing",
@@ -69,6 +70,7 @@ export function getServerSideProps(context) {
           title:
             "GOTEHE 7 MM Engraved Gold Plated Stainless Steel The Ring Pendant Necklace One pc Ring Necklace for Men Women Girls Teens",
           price: 11.99,
+          adjustedPrice: 8.99,
           description:
             'Size: Chain length 23.6"(60cm), with 2.0"(5.0cm) extended chain. Made of stainless steel',
           category: "jewellery",
@@ -81,6 +83,7 @@ export function getServerSideProps(context) {
           title:
             "Handmade Beer Mug Set of 6 Oak Wood Stainless Steel Cup Wooden Tankards Retro Brown 16oz",
           price: 159.8,
+          adjustedPrice: 150.99,
           description:
             "Set of 6 Beer Mugs. Improved mugs with boxes for all true beer lovers !!! Handmade oak wood mug accomplished in a dark brown color. The stainless steel cup inside the wooden casing of the mug will keep the temperature of the beer colder, for a longer period of time during the summer & the temperature of hot coffee or tea in cold winter.",
           category: "grocery",
@@ -93,6 +96,7 @@ export function getServerSideProps(context) {
           title:
             "Nemesis Now Officially Licensed Lord of The Rings Sauron Tankard, Grey, 15.5cm",
           price: 55.38,
+          adjustedPrice: 51.99,
           description:
             "Officially Licensed. Lord of the Rings. Sauron Tankard.Sise 15.5cm.",
           category: "grocery",
@@ -105,6 +109,7 @@ export function getServerSideProps(context) {
           title:
             "Nemesis Now Officially Licensed Lord of The Rings Aragorn Tankard, Silver, 15.5cm",
           price: 59.99,
+          adjustedPrice: 55.99,
           description:
             "Officially Licensed. Lord of the Rings. Sauron Tankard.Sise 15.5cm.",
           category: "grocery",
