@@ -8,7 +8,15 @@ import { addToBasket } from "../slices/basketSlice";
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-function Product({ id, title, price, description, category, image }) {
+function Product({
+  id,
+  title,
+  price,
+  adjustedPrice,
+  description,
+  category,
+  image,
+}) {
   const dispatch = useDispatch();
 
   const [rating] = useState(
@@ -22,6 +30,7 @@ function Product({ id, title, price, description, category, image }) {
       id,
       title,
       price,
+      adjustedPrice,
       rating,
       description,
       category,
@@ -49,8 +58,14 @@ function Product({ id, title, price, description, category, image }) {
           ))}
       </div>
       <p className="text-xs my-2 line-clamp-2">{description}</p>
-      <div className="mb-5">
-        <Currency quantity={price} currency="USD" />
+      <div className="mb-5" style={{ display: "flex" }}>
+        <p className="currency-line-through">
+          <Currency quantity={price} currency="USD" />
+        </p>
+        {"   "}
+        <p>
+          <Currency quantity={adjustedPrice} currency="USD" />
+        </p>
       </div>
 
       {hasPrime && (
