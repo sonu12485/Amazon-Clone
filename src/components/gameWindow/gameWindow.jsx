@@ -15,15 +15,14 @@ export default function GameWindow(props) {
 
   return (
     <div className="body">
+      {console.log(width, height)}
       <div className="confettie-wrap" ref={confetiRef}>
-        <Confetti
-          run={flag}
-          numberOfPieces={150}
-          width={width}
-          height={height}
-        />
+        <Confetti run={flag} numberOfPieces={150} width={2000} height={2000} />
       </div>
-      <h2 style={{ marginLeft: "20px" }}> Spin and win </h2>
+      <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+        <h2 style={{ fontSize: "34px", fontWeight: "600" }}> Spin and win </h2>
+      </div>
+
       <br />
       <br />
       <WheelSpin spinClicked={spinClicked} />

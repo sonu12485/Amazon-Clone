@@ -21,6 +21,7 @@ function Modal() {
         <button
           className="Close"
           onClick={() => setDisplayModal(!displayModal)}
+          style={{ fontWeight: "600" }}
         >
           X
         </button>
